@@ -1,0 +1,38 @@
+name: email_3step_default
+description: >
+  Default 3-step email-only sequence. Step 1 on day 0, step 2 two days later,
+  step 3 three days after step 2 (= day 5 total).
+
+source_framework: null
+
+steps:
+  - step: 1
+    channel: email
+    delay_days: 0
+    ask: "Open the conversation with a signal-anchored hook + one-line ask for a 15-min call."
+  - step: 2
+    channel: email
+    delay_days: 2     # 2 days after step 1 = day 2
+    ask: "Bump with a peer reference or a category-benchmark stat. Same ask, slightly different angle."
+  - step: 3
+    channel: email
+    delay_days: 3     # 3 days after step 2 = day 5
+    ask: "Soft break-up. 'Should I park this for now?' Single line, no pitch."
+
+crm_actions:
+  - on_send: log_to_crm
+  - on_reply: log_to_crm
+  - on_no_reply_after_step_3: mark_unresponsive
+
+compatible_tiers: [1, 2, 3]
+compatible_archetypes: ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+
+expected_kpis:
+  open_rate: 0.35
+  reply_rate: 0.05
+  meeting_rate: 0.015
+
+notes: >
+  Use this as the default when /create-campaign reaches step 3 with no specific
+  framework-derived sequence. Calibration values in expected_kpis are placeholders —
+  update once real campaign data lands in the `campaigns` table.

@@ -1,0 +1,48 @@
+# Sequence YAML schema — every sequence file in this folder + templates/ + active/
+# must conform to this shape.
+
+# REQUIRED FIELDS:
+
+# Identifier (lower_snake_case, unique across all sequences)
+name: string
+
+# Free-text description
+description: string
+
+# Reference to a framework_id in frameworks/frameworks_list.md, or null
+source_framework: string | null
+
+# Ordered list of steps. step numbers start at 1.
+steps:
+  - step: int            # 1-indexed step number
+    channel: string      # "email" | "linkedin"
+    delay_days: int      # days after the PREVIOUS step (0 for step 1)
+    # Optional per-step fields:
+    ask: string          # one-line description of what this step asks for
+    message_ref: string  # path to messages_step_<N>.md once generated
+    subject_hint: string # optional subject-line direction
+
+# CRM action hooks (optional, fired by the tracker)
+crm_actions:
+  - on_send: string         # action when message sends (e.g. "log_to_crm")
+  - on_open: string         # action on open (optional)
+  - on_reply: string        # action on reply (e.g. "log_to_crm", "create_task")
+  - on_bounce: string       # action on bounce
+  - on_no_reply_after_step_N: string  # action when sequence ends without reply
+
+# OPTIONAL FIELDS:
+
+# Tier compatibility (which tiers this sequence is appropriate for)
+compatible_tiers: [int]    # subset of [1, 2, 3]
+
+# Archetype compatibility (which archetypes)
+compatible_archetypes: [string]  # subset of ["a", "b", ..., "i"]
+
+# Expected KPIs (calibration target, not enforcement)
+expected_kpis:
+  open_rate: float
+  reply_rate: float
+  meeting_rate: float
+
+# Internal notes
+notes: string
