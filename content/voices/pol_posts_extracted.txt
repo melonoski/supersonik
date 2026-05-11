@@ -1,0 +1,106 @@
+﻿=====POST 1 (1mo) - type=image - reactions=10 - comments=3 - engagement=13=====
+We are reviewing real client calls with our AI agent at Supersonik.
+
+This is some of the highest leverage work we do.
+
+Because the product is not just the technology behind it. The product is the experience the end user has during the call.
+
+That is what they judge.
+That is what they remember.
+That is what they associate with Supersonik.
+
+Users do not care how hard the system is to build.
+They care whether the experience feels smooth, useful, clear, and trustworthy.
+
+So when we sit together and review recordings, we are not doing it as a ritual.
+We are doing it because this is where the truth is.
+
+The end userâ€™s experience is the product.
+And their perception is the brand.
+
+If we want Supersonik to be great, we need to keep watching, learning, and improving those moments again and again.
+
+=====POST 2 (1mo) - type=image - reactions=10 - comments=2 - engagement=12=====
+Anthropic shipped an absurd amount in 52 days.
+
+Weâ€™re seeing the same pattern internally. After adopting AI aggressively, our engineering team is shipping +3x faster.
+
+But AI does not remove bottlenecks. It shifts them.
+The bottleneck is no longer writing code. It is PR reviews, observability, test coverage, and safe rollout.
+
+Once code becomes cheap to produce, quality can no longer depend on humans manually catching everything in review. That does not scale.
+
+So the stack has to change:
+- stronger testing pipelines
+- better observability
+- canary deployments
+- tighter feedback loops after release
+
+This is the only way to move fast without hurting reliability.
+
+For enterprise products, that matters even more. Customers want speed, but they also expect strong SLAs and predictable behavior.
+AI is not just making teams faster. It is forcing teams to become much better at the discipline of shipping.
+
+That is the real shift.
+
+=====POST 3 (1mo) - type=text - reactions=10 - comments=3 - engagement=13=====
+TurboQuant from Google Research is suddenly everywhere this week, but the paper actually dropped back in 2025.
+
+Classic AI cycle: ignore â†’ rediscover â†’ â€œthis changes everything.â€
+
+Still, the results are genuinely interesting.
+
+The paper shows that for KV-cache quantization, TurboQuant achieves quality neutrality at 3.5 bits per channel, with only marginal degradation at 2.5 bits.
+
+Why it matters: KV cache is one of the biggest bottlenecks in LLM inference. Compressing it efficiently can reduce memory pressure and improve throughput, especially for long-context workloads.
+
+Will it magically make real-time AI feel instant? No.  
+But itâ€™s a meaningful step toward making LLM systems cheaper and more scalable.
+
+Less hype, more signal. This one is worth paying attention to.
+
+=====POST 4 (2mo) - type=article - reactions=10 - comments=0 - engagement=10=====
+ðŸš€ Weâ€™re #hiring at Supersonik! 
+
+Join a fast-paced, agentic AI startup redefining how software is sold. 
+Early career, real ownership, steep growth.
+
+See our open opportunities at: https://lnkd.in/gKZVxdHs
+
+=====POST 5 (8mo) - type= - reactions=10 - comments=10 - engagement=20=====
+About six months ago, Daniel Carmona Serrat, Joaquim Lecha, and I set out on a bold mission:
+ðŸ‘‰ Build an AI that can run a live product demo instantly, with no scheduling.
+
+What sounded simple turned into one of the hardest technical challenges I've faced: making an AI that can control a browser interactively, orchestrate LLMs, speak and understand multiple languages, and still respond in under one second, all on a live video call.
+
+Today, I'm proud to share that we've raised $5M, led by Andreessen Horowitz, with participation from incredible angels including Oriol Vinyals (DeepMind), Xavier (Xavi) Amatriain (Google), and others.
+Built in Barcelona, running globally. ðŸš€
+
+For me as an engineer, few things are more exciting than tackling these problems at the edge of what's possible. And we're just getting started.
+
+If you are interested in solving the hardest problems on real-time AI, join us!
+
+=====POST 6 (8mo) - type=text - reactions=10 - comments=1 - engagement=11=====
+We're assembling the best team in Europe. If you love scalability, real-time, browser automation and AI,  DM me.
+
+=====POST 7 (2yr) - type=text - reactions=3 - comments=0 - engagement=3=====
+ðŸŽ‰ Exciting news from Aldara! We've just launched a suite of AI tools designed specifically for homeowners.
+
+=====POST 8 (2yr) - type=image - reactions=8 - comments=6 - engagement=14=====
+We're hiring a Software Engineer to join our team in Barcelona.
+
+If you want to join a fast-growing early stage startup with a small team of incredible individuals and a culture of extreme ownership, this is your place.
+
+Find out more about our engineering culture and the opportunity here: https://lnkd.in/dMRwbT68
+
+=====POST 9 (2yr) - type=image - reactions=9 - comments=4 - engagement=13=====
+Nestor (YC S22) is now Aldara!
+
+We're thrilled to announce that our journey as Nestor has evolved into a fresh, new chapter - Aldara. This rebranding is more than just a name change; it's a reflection of our commitment to staying modern and professional, appealing to all generations.
+
+Innovation drives us at Aldara. We cater to all our clients' needs - offering digital solutions for the tech-savvy, and simpler, approachable options for those less digitally inclined. Our new identity symbolizes this versatility: we're as digital as you want us to be.
+
+We're excited about this new era, and we can't wait to share more. Stay tuned for what's coming next!
+
+https://aldara.com
+

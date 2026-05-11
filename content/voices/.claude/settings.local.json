@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($json = Get-Content \"D:\\\\GTM\\\\Supersonik Job\\\\gtm\\\\content\\\\voices\\\\joaquim.json\" -Raw | ConvertFrom-Json; \"Total top-level posts: $\\($json.Count\\)\"; $json | ForEach-Object { $_.text.Length } | Measure-Object -Sum -Average -Maximum -Minimum)",
+      "PowerShell(Out-File *)",
+      "PowerShell(Get-Content *)",
+      "PowerShell($j = Get-Content \"D:\\\\GTM\\\\Supersonik Job\\\\gtm\\\\content\\\\voices\\\\jordi.json\" -Raw | ConvertFrom-Json; $j | ForEach-Object { Write-Output \"URN: $\\($_.urn\\) | URL: $\\($_.url\\) | TextStart: $\\($_.text.Substring\\(0, [Math]::Min\\(80, $_.text.Length\\)\\)\\)\" })"
+    ]
+  }
+}
